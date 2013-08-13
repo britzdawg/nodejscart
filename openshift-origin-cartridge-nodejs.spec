@@ -2,7 +2,7 @@
 
 Summary:       Provides Node.js support
 Name:          openshift-origin-cartridge-nodejs
-Version: 1.14.5
+Version: 1.14.6
 Release:       1%{?dist}
 Group:         Development/Languages
 License:       ASL 2.0
@@ -41,7 +41,7 @@ Provides Node.js support to OpenShift. (Cartridge Format V2)
 %__mkdir -p %{buildroot}%{cartridgedir}
 %__cp -r * %{buildroot}%{cartridgedir}
 
-echo "NPM installed Node version is '/usr/local/n/versions/0.10.15/bin/node -v'"
+echo "NPM installed Node version is `/usr/local/n/versions/0.10.15/bin/node -v`"
 
 echo "NodeJS version is `/usr/bin/node -v`"
 if [[ $(/usr/bin/node -v) == v0.6* ]]; then
@@ -64,6 +64,9 @@ fi
 %doc %{cartridgedir}/LICENSE
 
 %changelog
+* Tue Aug 13 2013 Unknown name 1.14.6-1
+- 
+
 * Tue Aug 13 2013 Unknown name 1.14.5-1
 - added a case that if using node binary manager module 'n' that installs node
   into /usr/local/n/versions/0.10.15/bin/node instead of /usr/bin/node it will
