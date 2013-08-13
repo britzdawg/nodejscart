@@ -2,7 +2,7 @@
 
 Summary:       Provides Node.js support
 Name:          openshift-origin-cartridge-nodejs
-Version: 1.14.1
+Version: 1.14.2
 Release:       1%{?dist}
 Group:         Development/Languages
 License:       ASL 2.0
@@ -62,6 +62,9 @@ fi
 %doc %{cartridgedir}/LICENSE
 
 %changelog
+* Tue Aug 13 2013 Unknown name 1.14.2-1
+- new package built with tito
+
 * Thu Aug 08 2013 Adam Miller <admiller@redhat.com> 1.14.1-1
 - Merge pull request #3313 from jwhonce/wip/manifest_lint
   (dmcphers+openshiftbot@redhat.com)
