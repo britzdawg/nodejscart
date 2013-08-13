@@ -2,7 +2,7 @@
 
 Summary:       Provides Node.js support
 Name:          openshift-origin-cartridge-nodejs
-Version: 1.14.4
+Version: 1.14.5
 Release:       1%{?dist}
 Group:         Development/Languages
 License:       ASL 2.0
@@ -64,6 +64,11 @@ fi
 %doc %{cartridgedir}/LICENSE
 
 %changelog
+* Tue Aug 13 2013 Unknown name 1.14.5-1
+- added a case that if using node binary manager module 'n' that installs node
+  into /usr/local/n/versions/0.10.15/bin/node instead of /usr/bin/node it will
+  use the 'n' path instead (root@broker.openshift.local)
+
 * Tue Aug 13 2013 Unknown name 1.14.4-1
 - 
 
