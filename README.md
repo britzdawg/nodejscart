@@ -1,4 +1,2 @@
-nodejscart
-==========
-
-This is a copy of the nodejs cart that is hosted by openshift-origin account that i made to test deploying a cart using nodejs
+# OpenShift NodeJS Cartridge
+This cartridge is documented in the [Cartridge Guide](http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs).
