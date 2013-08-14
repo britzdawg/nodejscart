@@ -50,7 +50,7 @@ if [[ $(/usr/bin/node -v) == v0.6* ]]; then
 fi
 
 if [[ ($(/usr/bin/node -v) == v0.10*) || ($(/usr/local/n/versions/0.10.15/bin/node -v) == v0.10*)]]; then
-%__rm -f %{buildroot}%{cartridgedir}/versions/0.6
+%__rm -rf %{buildroot}%{cartridgedir}/versions/0.6
 %__mv %{buildroot}%{cartridgedir}/metadata/manifest.yml.0.10 %{buildroot}%{cartridgedir}/metadata/manifest.yml;
 fi
 
