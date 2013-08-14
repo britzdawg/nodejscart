@@ -2,7 +2,7 @@
 
 Summary:       Provides Node.js support
 Name:          openshift-origin-cartridge-nodejs
-Version: 1.14.6
+Version: 1.14.7
 Release:       1%{?dist}
 Group:         Development/Languages
 License:       ASL 2.0
@@ -64,6 +64,9 @@ fi
 %doc %{cartridgedir}/LICENSE
 
 %changelog
+* Wed Aug 14 2013 Unknown name 1.14.7-1
+- added change to say OR in parens (root@broker.openshift.local)
+
 * Tue Aug 13 2013 Unknown name 1.14.6-1
 - 
 
