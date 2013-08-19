@@ -44,10 +44,9 @@ Provides Node.js support to OpenShift. (Cartridge Format V2)
 
 if [ -f /usr/local/3n/versions/*/bin/node ]; then
     echo "USING NPM VERSION ON SERVER"
-    PATH=$/usr/local/n/versions/*/bin:$PATH
-else
-	PATH=$/usr/bin:$PATH		    
-	echo "USING NODE VERSION ON SERVER"
+    export PATH=$/usr/local/n/versions/*/bin:$PATH
+else		   
+     echo "USING NODE VERSION ON SERVER"	
 fi
  
 if [[ $(node -v) == v0.6* ]]; then
